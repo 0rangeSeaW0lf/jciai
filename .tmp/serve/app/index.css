@@ -1,0 +1,22 @@
+html {
+  font-style: Roboto, Helvetica, sans-serif; }
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+.thumbnail {
+  height: 200px; }
+  .thumbnail img.pull-right {
+    width: 50px; }
+
+.navbar-default {
+  background-color: transparent;
+  border: 0;
+  padding-top: 20px;
+  padding-bottom: 0px; }
+
+.navbar-default .navbar-nav > li > a a {
+  color: #0097d7; }

@@ -1,0 +1,31 @@
+=vertical-align
+  position: relative
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+
+$navbar: 50px
+
+.hero
+    background: linear-gradient( rgba(0,151,215,0.5), rgba(0,151,215,0.5)), url("../assets/images/3.jpg")
+    display: flex
+    align-items: center
+    h1
+        font-size: 5rem
+        color: #FFF
+
+.btn-ghost
+    color: #FFF
+    border: 2px solid #fff
+    transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out
+    &:hover, &:active
+        background-color: #F37121
+        border-color: #FF3C0B
+        color: #FFF
+        transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in
+
+@media screen and (min-width: 768px)
+    .hero
+        margin-top: -$navbar
+        height: 100vh

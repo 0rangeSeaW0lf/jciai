@@ -1,6 +1,3 @@
-html {
-  font-style: Roboto, Helvetica, sans-serif; }
-
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -12,11 +9,118 @@ html {
   .thumbnail img.pull-right {
     width: 50px; }
 
-.navbar-default {
-  background-color: transparent;
-  border: 0;
-  padding-top: 20px;
-  padding-bottom: 0px; }
+.hero {
+  background: linear-gradient(rgba(0, 151, 215, 0.5), rgba(0, 151, 215, 0.5)), url("../assets/images/3.jpg");
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .hero h1 {
+    font-size: 5rem;
+    color: #FFF; }
 
-.navbar-default .navbar-nav > li > a a {
-  color: #0097d7; }
+.btn-ghost {
+  color: #FFF;
+  border: 2px solid #fff;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out; }
+  .btn-ghost:hover, .btn-ghost:active {
+    background-color: #F37121;
+    border-color: #FF3C0B;
+    color: #FFF;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in; }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-top: -50px;
+    height: 100vh; } }
+
+.navbar {
+  margin-bottom: 0;
+  z-index: 30; }
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    border-radius: 0;
+    color: white;
+    background-color: transparent;
+    border: 0; }
+  .active {
+    color: white; }
+  .navbar-default .navbar-nav > li > a {
+    color: white; }
+    .navbar-default .navbar-nav > li > a :hover {
+      color: white; }
+  #home:hover {
+    padding-bottom: 2px;
+    border-bottom: 5px solid #7DC242;
+    margin-bottom: 8px;
+    color: white;
+    z-index: 10; }
+  #home:active {
+    background-color: #7DC242;
+    padding-bottom: 15px;
+    border-bottom: 0;
+    margin-bottom: 0;
+    color: white; }
+  #activities:hover {
+    padding-bottom: 2px;
+    border-bottom: 5px solid #916CAF;
+    margin-bottom: 8px;
+    color: white;
+    z-index: 10; }
+  #activities:active {
+    background-color: #916CAF;
+    padding-bottom: 15px;
+    border-bottom: 0;
+    margin-bottom: 0;
+    color: white; }
+  #calendar:hover {
+    padding-bottom: 2px;
+    border-bottom: 5px solid #F37121;
+    margin-bottom: 8px;
+    color: white;
+    z-index: 10; }
+  #calendar:active {
+    background-color: #F37121;
+    padding-bottom: 15px;
+    border-bottom: 0;
+    margin-bottom: 0;
+    color: white; }
+  #about:hover {
+    padding-bottom: 2px;
+    border-bottom: 5px solid #0097D7;
+    margin-bottom: 8px;
+    color: white;
+    z-index: 10; }
+  #about:active {
+    background-color: #0097D7;
+    padding-bottom: 15px;
+    border-bottom: 0;
+    margin-bottom: 0;
+    color: white; }
+  #join:hover {
+    padding-bottom: 2px;
+    border-bottom: 5px solid #3A67B1;
+    margin-bottom: 8px;
+    color: white;
+    z-index: 10; }
+  #join:active {
+    background-color: #3A67B1;
+    padding-bottom: 15px;
+    border-bottom: 0;
+    margin-bottom: 0;
+    color: white; }
+  #login:hover {
+    padding-bottom: 2px;
+    border-bottom: 5px solid #9E1B34;
+    margin-bottom: 8px;
+    color: white;
+    z-index: 10; }
+  #login:active {
+    background-color: #9E1B34;
+    padding-bottom: 15px;
+    border-bottom: 0;
+    margin-bottom: 0;
+    color: white; } }

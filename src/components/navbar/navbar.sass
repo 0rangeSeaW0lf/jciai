@@ -1,0 +1,44 @@
+=hover_link($color)
+    &:hover
+        padding-bottom: 2px
+        border-bottom: 5px solid $color
+        margin-bottom: 8px
+        color: white
+        z-index: 10
+    &:active
+        background-color: $color
+        padding-bottom: 15px
+        border-bottom: 0
+        margin-bottom: 0
+        color: white
+.navbar
+    margin-bottom: 0
+    z-index: 30
+
+@media screen and (min-width: 768px)
+    .navbar
+        border-radius: 0
+        color: white
+        background-color: transparent
+        border: 0
+    .active
+        color: white
+
+    .navbar-default .navbar-nav > li > a
+        // color: #0097D7
+        color: white
+        :hover
+            color: white
+    #home
+        @include hover_link(#7DC242)
+    #activities
+        // @include hover_link(#916CAF)
+        @include hover_link(#916CAF)
+    #calendar
+        @include hover_link(#F37121)
+    #about
+        @include hover_link(#0097D7)
+    #join
+        @include hover_link(#3A67B1)
+    #login
+        @include hover_link(#9E1B34)

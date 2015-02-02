@@ -1,0 +1,1 @@
+$(".hero").backstretch("../../assets/images/3.jpg");

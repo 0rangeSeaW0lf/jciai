@@ -31,9 +31,9 @@
         "version": "~2.1.1"
       },
       "resource": {
-        "name": null,
-        "version": null,
-        "module": null
+        "name": "restangular",
+        "version": "~1.4.0",
+        "module": "restangular"
       },
       "router": {
         "name": "angular-ui-router",
@@ -41,16 +41,10 @@
         "module": "ui.router"
       },
       "ui": {
-        "name": "bootstrap-sass-official",
-        "version": "~3.3.1",
-        "key": "bootstrap",
-        "module": null
-      },
-      "bootstrapComponents": {
-        "name": null,
-        "version": null,
-        "key": "official",
-        "module": null
+        "name": "angular-material",
+        "version": "~0.5.1",
+        "key": "angular-material",
+        "module": "ngMaterial"
       },
       "cssPreprocessor": {
         "key": "node-sass",
@@ -70,6 +64,12 @@
         "extension": "html",
         "module": null,
         "version": null
+      },
+      "bootstrapComponents": {
+        "name": null,
+        "version": null,
+        "key": null,
+        "module": null
       },
       "foundationComponents": {
         "name": null,

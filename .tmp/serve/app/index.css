@@ -2,71 +2,18 @@ html {
   font-family: 'Roboto', sans-serif; }
 
 .hero {
-  background: linear-gradient(rgba(0, 151, 215, 0.4), rgba(0, 151, 215, 0.4)), url("../assets/images/3.jpg") no-repeat no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  min-height: 70vh;
-  color: white;
-  text-align: center; }
-  .hero h1 {
-    font-size: 5em;
-    font-weight: 100; }
-  .hero-second {
-    min-height: 50vh; }
-    .hero-second h1 {
-      font-size: 80px;
-      font-weight: 100;
-      color: black; }
-  .hero-sub {
-    background: orange; }
-
-.btn-ghost-large {
-  font-size: 1.0625em;
-  padding: 0.5625em 1.5em; }
-
-.btn-radius {
-  border-radius: 5px; }
-
-a.btn-ghost, .btn-ghost {
-  display: inline-block;
-  outline: none;
-  *zoom: 1;
-  text-align: center;
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: 300;
-  letter-spacing: 1px;
-  vertical-align: middle;
-  border: 1px solid;
-  transition: all 0.2s ease;
-  box-sizing: border-box;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01); }
-
-.btn-orange {
-  color: #FFF;
-  border-color: #FFF; }
-  .btn-orange:hover {
-    background: #FF8C00;
-    color: #fff;
-    border-color: #FF8C00; }
-
-.responsive-img {
-  max-width: 100%;
-  height: auto; }
-
-.section h2 {
-  font-size: 2em; }
-.section p {
-  padding-top: 1.5em;
-  font-size: 1.0625em; }
+  max-height: 100vh;
+  width: 100%; }
 
 .navbar {
-  padding-left: 1vw; }
+  padding-left: 1vw;
+  color: #0097d7; }
 
 md-toolbar.md-theme-indigo.navbar.md-default-theme {
   padding-left: 1v; }
+
+.ng-scope.md-default-theme {
+  background-color: white; }
 
 md-sidenav, md-sidenav.md-locked-open, md-sidenav.md-closed.md-locked-open-add-active {
   min-width: 270px !important;

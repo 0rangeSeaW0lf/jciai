@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jciapp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ui.router', 'ngMaterial', 'ngMessages'])
+angular.module('jciapp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ui.router', 'ngMaterial'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {

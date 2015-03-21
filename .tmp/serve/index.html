@@ -5,13 +5,12 @@
     <title>JCI Amsterdam International</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link href="//fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,latin-ext' rel='stylesheet" type="text/css">
-
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="../bower_components/angular-typewrite/dist/angular-typewrite.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -25,10 +24,9 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header ng-include="'components/navbar/navbar.html'"></header>
-
+    <nav ng-include="'components/navbar/navbar.html'"></nav>
     <div ui-view></div>
-
+    <nav ng-include="'components/footer/footer.html'"></nav>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -41,6 +39,7 @@
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="../bower_components/es5-shim/es5-shim.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/angular/angular.js"></script>
     <script src="../bower_components/angular-animate/angular-animate.js"></script>
@@ -53,13 +52,18 @@
     <script src="../bower_components/angular-aria/angular-aria.js"></script>
     <script src="../bower_components/angular-material/angular-material.js"></script>
     <script src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../bower_components/typed.js/js/typed.js"></script>
+    <script src="../bower_components/json3/lib/json3.js"></script>
+    <script src="../bower_components/angular-typewrite/dist/angular-typewrite.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
     <!-- inject:js -->
     <script src="app/index.js"></script>
+    <script src="components/footer/footer.controller.js"></script>
     <script src="components/navbar/navbar.controller.js"></script>
+    <script src="app/main/type.js"></script>
     <script src="app/main/main.controller.js"></script>
     <!-- endinject -->
 

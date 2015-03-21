@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('jciapp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ui.router', 'ngMaterial', 'ngMessages'])
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, $mdThemingProvider) {
     $stateProvider
       .state('home', {
         url: '/',
@@ -10,5 +10,8 @@ angular.module('jciapp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 're
       });
 
     $urlRouterProvider.otherwise('/');
-  })
-;
+
+    $mdThemingProvider.theme('default')
+    .primaryPalette('light-blue')
+    .accentPalette('deep-orange');
+  });

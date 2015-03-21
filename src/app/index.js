@@ -7,6 +7,10 @@ angular.module('jciapp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 're
         url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
+      })
+      .state('jci',{
+        url: '/jci',
+        templateUrl: 'app/content/jci.html'
       });
 
     $urlRouterProvider.otherwise('/');

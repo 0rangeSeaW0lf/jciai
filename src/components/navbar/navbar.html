@@ -1,17 +1,20 @@
 <md-toolbar layout="row" layout-align="center center" ng-controller="NavbarCtrl" class="navbar">
     <section flex layout="row" layout-align="left center">
-        <h2 class="md-toolbar-tools">
-            <span ng-click="toggleLeft()">(M)</span><span>(JCI AI Logo)</span>
+        <h2 class="md-toolbar-tools" hide-sm>
+            <span ng-click="toggleLeft()">(M1)</span><span>(JCI AI Logo)</span>
+        </h2>
+        <h2 class="md-toolbar-tools" hide-gt-sm>
+            <span ng-click="">(M2)</span><span>(JCI AI Logo)</span>
         </h2>
     </section>
 </md-toolbar>
-<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+<md-sidenav class="md-sidenav-left md-whiteframe-z2 navbar" md-component-id="left" hide-sm>
     <md-toolbar ng-controller="LeftCtrl">
         <h2 class="md-toolbar-tools">
-            <span ng-click="close()">(M)</span><span>JCI Amsterdam Int'l</span>
+            <span ng-click="close()">(M1)</span><span>JCI Amsterdam Int'l</span>
         </h2>
     </md-toolbar>
     <md-content class="md-padding">
-        
+        <h6>Home</h6>
     </md-content>
 </md-sidenav>

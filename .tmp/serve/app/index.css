@@ -70,8 +70,8 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  max-height: 100vh;
-  z-index: 30; }
+  z-index: 9999;
+  max-height: 100vh; }
 
 md-sidenav.md-sidenav-left.md-whiteframe-z2.ng-scope.ng-isolate-scope {
   z-index: 31; }
